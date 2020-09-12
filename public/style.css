@@ -1,0 +1,186 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#e7eaed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.err-msg{
+    color:red;
+    font-size:12px;
+    visibility: hidden;
+}
+
+/*--------------------------------------------Sign In Page CSS----------------------------------------*/
+.container{
+    padding:0 300px;
+}
+
+ .formsDesign{
+    background:white;
+    text-align:center;
+    padding: 80px 100px;
+    margin-top:24px;
+    padding-bottom:50px;
+}
+.heading{
+    margin-top:60px;
+}
+.heading h1{
+    margin-bottom:0;
+}
+.heading p{
+    font-size:14px;
+    color:grey;
+}
+fieldset{
+    width:62%;
+    border:2px solid #ffe4ad;
+    text-align:left;
+    padding:8px;
+    margin:40px auto;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+fieldset legend{
+    font-size: 12px;
+    color:grey;
+}
+fieldset input{
+    width:80%;
+    border:none;
+    outline:none;
+    font-weight:bold;
+    font-size:14px;
+}
+fieldset select{
+    border:none;
+    outline:none;
+    font-weight:bold;
+    font-size:14px;
+    color:grey;
+}
+form p{
+    color:grey;
+    font-size:14px;
+}
+button{
+    color:white;
+    cursor: pointer;
+    background: #f7b348;
+    border-radius:25px;
+    width:180px;
+   padding:10px;
+   border:none;
+   outline:none;
+   margin-top:50px;
+}
+#number_page{
+    display: none;
+}
+
+.active{
+    display: block !important;
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        padding:0;
+    }
+    .container .formsDesign{
+        padding: 80px 0;
+        margin-top:0;
+    }
+
+    fieldset{
+        width:80%;
+       
+    }
+    #successForm{
+        height:100%;
+    }
+
+}
+
+/*----------------------------------OTP Verify Page Css-------------------------------*/
+.verify_otp{
+    margin-top:50px;
+}
+.verify_otp h2{
+    color:#7e7f7f;
+}
+.verify_otp p{
+    font-size:14px;
+    color:grey;
+    margin-bottom:0;
+}
+ a{
+    color:#f7b348;
+    font-size:14px;
+}
+.otpfield{
+   margin-top:50px;
+}
+.otpfield input{
+    width:35px;
+    height:35px;
+    margin-right: 8px;
+    border:none;
+    box-shadow:0px 2px 2px 2px #ccc;
+    font-size:18px;
+    padding:4px;
+    outline:none;
+    text-align: center;
+}
+.otpForm{
+    padding-top:40px;
+    padding-bottom:20px;
+    
+
+}
+.msg1{
+   position:relative;
+   top:10px;
+   font-weight: bold;
+}
+#otp-page{
+    padding-top:0px;
+    padding-bottom: 50px;
+    display: none;
+}
+/*------------------------Success page css-----------*/
+#success-page{
+    width:100%;
+    padding:0;
+}
+#successForm{
+    padding:25px 0;
+    margin:0;
+}
+/*---------------- Loader css-------------------- */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: auto;
+    margin-top:200px;
+  }
+  
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
