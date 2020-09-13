@@ -84,6 +84,9 @@ button{
 
 
 @media screen and (max-width:768px){
+    body{
+        background-color:white;
+        }
     .container{
         padding:0;
     }
@@ -93,7 +96,7 @@ button{
     }
 
     fieldset{
-        width:80%;
+        width:88%;
        
     }
     #successForm{
