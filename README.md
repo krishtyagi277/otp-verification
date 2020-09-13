@@ -1,5 +1,6 @@
 # otp-verification
 It is node.js otp verification app.
+Online Video link: https://drive.google.com/file/d/118szJ3saNdplKlRQ1Ye5PToAoujbGphp/view?usp=sharing
 I have used a static OTP:1234 for otp validation please use this on otp page.
 
 For running this project. You have to follow five steps:
