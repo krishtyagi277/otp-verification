@@ -13,7 +13,7 @@ app.get('/',(request,response)=>{
 })
 
 app.get('/success',(request,response)=>{
-          response.sendfile(path.resolve(__dirname,"pages/success.html"));
+          response.sendFile(path.resolve(__dirname,"pages/success.html"));
 })
 
 
