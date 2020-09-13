@@ -11,6 +11,7 @@ For running this project. You have to follow five steps:
    "npm run start"
    
    (Or in some case you can also try "node index.js" command for running the server)
+   
  4. Now just open my application on this url:
   " localhost:4000/"
  This will redirect you to home page of my application.
