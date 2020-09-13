@@ -2,7 +2,11 @@
 $(document).ready(()=>{
 
      let phoneNumber = "";
-
+     let selectedCountry = "+91";
+     $("#codes").change(function(){
+        selectedCountry = $(this).children("option:selected").val();
+        
+    });
     //----------------Sign In Form submit Js--------------------------//
      $("#sign-btn").submit((e)=>{
        e.preventDefault();
@@ -11,6 +15,7 @@ $(document).ready(()=>{
        }
 
       phoneNumber=$("#inputfield").val();
+      phoneNumber = selectedCountry.concat(phoneNumber);
       
       $.post("http://localhost:4000/generateotp",{phoneNumber},(result)=>{
                 localStorage.setItem("data",JSON.stringify(result));
