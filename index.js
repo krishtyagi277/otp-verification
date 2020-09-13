@@ -1,7 +1,10 @@
 const path = require("path");
 const express=require("express");
+
 const app = express();
 
+
+app.use(express.urlencoded())
 app.use(express.static("public"));
 
 
@@ -13,6 +16,18 @@ app.get('/success',(request,response)=>{
           response.sendfile(path.resolve(__dirname,"pages/success.html"));
 })
 
+
+ app.post("/generateotp",(request,response)=>{
+     let otp="1234";
+     const data=request.body.phoneNumber;
+     
+     let otpObj={
+         phNumber:data,
+         otp
+     }
+     
+     response.json(otpObj);
+ })
 
 
 
