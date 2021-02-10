@@ -18,5 +18,5 @@ For running this project. You have to follow five steps:
  This will redirect you to home page of my application.
  5. On OTP verifcation page please use  otp: 1234, I have used a static otp for verification.
  
- For any query, Feel free to email me on this email id: ranashilpi922@gmail.com .
+ For any query, Feel free to email me on this email id: krishtyagi277@gmail.com .
  
